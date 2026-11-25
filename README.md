@@ -1,9 +1,11 @@
 
-# ETL Operations Using Python
+# Python Programming and Data Analytics Practice
 
 ## Overview
 
-This assignment focuses on performing **Extract, Transform, and Load (ETL)** operations using Python. It involves working with CSV datasets, performing data cleaning, handling missing values, filtering records, generating statistical summaries, and performing data aggregation using Pandas and NumPy.
+This repository contains hands-on Python assignments and practical exercises focused on data manipulation, data cleaning, ETL operations, probability, and statistical analysis using Python libraries.
+
+The objective is to strengthen programming fundamentals and develop practical experience in solving data-related problems.
 
 ## Technologies Used
 
@@ -14,6 +16,14 @@ This assignment focuses on performing **Extract, Transform, and Load (ETL)** ope
 - Matplotlib
 - Seaborn
 - SciPy
+
+---
+
+# Day 01 – ETL Operations Using Python
+
+## Overview
+
+This assignment focuses on performing **Extract, Transform, and Load (ETL)** operations using Python. It involves working with CSV datasets, performing data cleaning, handling missing values, filtering records, generating statistical summaries, and performing data aggregation using Pandas and NumPy.
 
 ## Files Included
 
@@ -86,12 +96,134 @@ This assignment focuses on performing **Extract, Transform, and Load (ETL)** ope
 - GroupBy and Aggregation
 - Data Export
 
+---
+
+# Day 02 – Probability and Conditional Probability
+
+## Overview
+
+This section focuses on understanding and implementing probability and conditional probability concepts using Python and Pandas.
+
+The exercises cover practical scenarios involving customer purchasing behavior, student examination results, Titanic passenger survival analysis, medical testing, and Bayes' Theorem.
+
+## Files Included
+
+| File | Description |
+|---|---|
+| `Question-01.ipynb` | Customer purchase probability based on gender |
+| `Question-02.ipynb` | Student passing probability based on gender |
+| `Question-03.ipynb` | Titanic survival probability based on gender |
+| `Question-04.ipynb` | Medical test probability and Bayes' Theorem |
+| `Question-05.ipynb` | Student performance probability based on gender |
+
+
+## Questions and Tasks
+
+### Question 01 – Customer Purchase Probability
+
+A company collected purchase information from 100 customers.
+
+| Gender | Purchased | Not Purchased |
+|---|---:|---:|
+| Male | 30 | 20 |
+| Female | 35 | 15 |
+
+**Task:**
+
+- Calculate the probability of purchase given that the customer is female.
+
+**Concept:** Conditional Probability
+
+### Question 02 – Student Passing Probability
+
+Create a student dataset using Pandas containing gender and examination results.
+
+**Task:**
+
+- Create a Pandas DataFrame.
+- Calculate the probability of passing given that the student is female.
+
+**Concept:** Conditional Probability and DataFrame Filtering
+
+### Question 03 – Titanic Survival Analysis
+
+Using the Titanic dataset, calculate the probability of survival given that the passenger was female.
+
+**Tasks:**
+
+- Load the Titanic dataset using Seaborn.
+- Filter female passengers.
+- Identify female passengers who survived.
+- Calculate the conditional probability of survival given gender.
+
+**Concept:** Conditional Probability and Real-World Dataset Analysis
+
+### Question 04 – Medical Test and Bayes' Theorem
+
+A hospital conducted a health screening of 1,000 people.
+
+| Category | Number of People |
+|---|---:|
+| People with disease | 200 |
+| People without disease | 800 |
+| Tested positive among diseased | 180 |
+| Tested positive among healthy | 80 |
+
+**Tasks:**
+
+- Calculate the probability that a person has the disease given a positive test result.
+- Calculate the probability that a person does not have the disease given a negative test result.
+- Calculate the probability of testing positive.
+- Explain why a positive test result does not necessarily mean that the person has the disease.
+
+**Concepts:** Conditional Probability and Bayes' Theorem
+
+### Question 05 – Student Performance Probability
+
+Create the following dataset using Pandas.
+
+| Student | Gender | Passed |
+|---|---|---|
+| A | Male | Yes |
+| B | Female | Yes |
+| C | Male | No |
+| D | Female | Yes |
+| E | Male | Yes |
+| F | Female | No |
+| G | Male | Yes |
+| H | Female | No |
+| I | Male | No |
+| J | Female | Yes |
+
+**Tasks:**
+
+1. Create a Pandas DataFrame.
+2. Calculate the probability of passing.
+3. Calculate the probability of passing given that the student is female.
+4. Calculate the probability of passing given that the student is male.
+
+**Concepts:** Basic Probability, Conditional Probability, and Pandas DataFrame Operations
+
+## Key Concepts Covered
+
+- Basic Probability
+- Conditional Probability
+- Bayes' Theorem
+- Probability Calculations
+- DataFrame Creation
+- Data Filtering
+- Boolean Indexing
+- Statistical Analysis
+- Real-World Data Analysis
+
+---
+
 ## How to Run
 
 ### 1. Install Required Libraries
 
 ```bash
-pip install pandas numpy matplotlib seaborn scipy
+pip install pandas numpy matplotlib seaborn scipy jupyter
 ```
 
 ### 2. Launch Jupyter Notebook
@@ -100,25 +232,26 @@ pip install pandas numpy matplotlib seaborn scipy
 jupyter notebook
 ```
 
-### 3. Open the Notebooks
+### 3. Open the Required Notebook
 
-- `Question_01.ipynb`
-- `Question_02.ipynb`
+Navigate to the respective assignment folder and open the required `.ipynb` file.
 
 ### 4. Execute the Cells
 
 Run the notebook cells sequentially.
 
-Make sure the required CSV files are available in the same working directory as the notebooks.
+Make sure the required CSV files are available in the same working directory whenever applicable.
 
 ## Learning Outcomes
 
-- Gained practical experience in handling structured CSV datasets.
-- Understood the ETL process using Python.
+- Gained practical experience in Python programming.
+- Understood ETL operations using Pandas and NumPy.
 - Practiced data cleaning and preprocessing techniques.
-- Learned to perform filtering, statistical analysis, and aggregation using Pandas.
-- Developed experience in exporting processed datasets.
+- Learned to perform filtering, statistical analysis, and aggregation.
+- Understood probability and conditional probability.
+- Applied Bayes' Theorem to a real-world medical testing scenario.
+- Developed problem-solving skills through practical exercises.
 
 ---
 
-**Focus Areas:** Python | Pandas | NumPy | Data Cleaning | ETL | Data Analytics
+**Focus Areas:** Python | Pandas | NumPy | ETL | Data Cleaning | Probability | Conditional Probability | Bayes' Theorem | Data Analytics
